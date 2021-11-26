@@ -123,8 +123,8 @@ body {
 }
 
 #you .message-meta {
-  justify-content: flex-start;
-  margin-left: 5px;
+  justify-content: flex-end;
+  margin-right: 5px;
 }
 
 #other {
@@ -137,8 +137,8 @@ body {
 }
 
 #other .message-meta {
-  justify-content: flex-end;
-  margin-right: 5px;
+  justify-content: flex-start;
+  margin-left: 5px;
 }
 
 .message-meta #author {

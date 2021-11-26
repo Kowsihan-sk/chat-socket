@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import io from "socket.io-client";
 import Chat from "./Chat";
 
-const socket = io.connect("https://socket--io--chat.herokuapp.com/");
-// const socket = io.connect("http://localhost:5000");
+const socket = io.connect("https://socket--io--chat.herokuapp.com/", { transports: ['websocket'], upgrade: false });
+// const socket = io("http://localhost:5000", { transports: ['websocket'], upgrade: false });
 
 function App() {
   const [username, setUsername] = useState("");
